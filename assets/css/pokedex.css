@@ -1,0 +1,109 @@
+.lista__pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+}
+
+.pokemon__info {
+    background-color: #49D0B0;
+    border-radius: 1rem;
+    color: #FFFFFF;   
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 1rem 0.7rem;   
+}
+
+.pokemon__numero {
+    color: #000000;
+    font-size: .8rem;
+    font-weight: 700;
+    opacity: 0.3;
+    text-align: right;
+}
+
+.pokemon__nome {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    margin: .25rem 0;
+}
+
+.pokemon__detalhes {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.pokemon__categorias {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon__tipo {
+    background-color: #61E1CA;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-size: .625rem;
+    margin: .25rem 0;
+    padding: .25rem .7rem;
+}
+
+.pokemon__imagem {
+    height: 80%;
+    max-width: 70%;
+}
+
+@media screen and (min-width: 380px) {
+    .lista__pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pokemon__tipo {
+        font-size: .670rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .lista__pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .pokemon__tipo {
+        font-size: .75rem;
+        padding: .3rem .9rem;
+    }
+
+    .pokemon__numero {
+        font-size: .95rem;
+    }
+
+    .pokemon__nome {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .lista__pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .pokemon__tipo {
+        font-size: .85rem;
+        padding: .35rem .92rem;
+    }
+
+    .pokemon__numero {
+        font-size: 1.2rem;
+    }
+
+    .pokemon__nome {
+        font-size: 1.6rem;
+    }
+
+}
+
