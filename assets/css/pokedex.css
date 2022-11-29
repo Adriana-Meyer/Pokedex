@@ -1,9 +1,14 @@
+.titulo__principal {
+    font-weight: 700;
+}
+
 .lista__pokemons {
     display: grid;
     grid-template-columns: 1fr;
     list-style: none;
     margin: 0;
     padding: 0;  
+    
 }
 
 .normal {
@@ -62,17 +67,23 @@
 }
 
 .pokemon__info {
+    background-image: url(../img/pokebola1.png); 
+    background-position: 125% 110%;
+    background-repeat: no-repeat;
+    background-size: 60%;
     border-radius: 1rem;
     color: #FFFFFF;   
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
     padding: 1rem 0.7rem;   
+    box-shadow: 2px 2px 10px #696969;
+    
 }
 
 .pokemon__numero {
     color: #000000;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 700;
     opacity: 0.3;
     text-align: right;
@@ -107,11 +118,32 @@
     margin: .25rem 0;
     padding: .25rem .7rem;
     text-align: center;
+    box-shadow: 1px 1px 10px #0000005d ;
 }
 
 .pokemon__imagem {
     height: 100px;
     max-width: 120px;
+}
+
+.paginacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.botao__paginacao {
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px #6c79db ;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    margin: .25rem 0;
+    padding: .25rem .5rem;
 }
 
 @media screen and (min-width: 380px) {
@@ -132,10 +164,6 @@
     .pokemon__tipo {
         font-size: .75rem;
         padding: .3rem .9rem;
-    }
-
-    .pokemon__numero {
-        font-size: .95rem;
     }
 
     .pokemon__nome {
